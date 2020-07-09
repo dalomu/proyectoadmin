@@ -11,18 +11,18 @@ import { RegisterComponent } from './login/register.component';
 
 const appRoutes: Routes = [
 
-    {
-        path: '',
-        component: PagesComponent,
-        children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'progress', component: ProgressComponent },
-            { path: 'graficas1', component: Grafics1Component },
-                //PARA INSTERTAR UNA RUTA VACÍA QUE DIRECCIONE AL DASHBOARD
+    // {
+    //     path: '',
+    //     component: PagesComponent,
+    //     children: [
+    //         { path: 'dashboard', component: DashboardComponent },
+    //         { path: 'progress', component: ProgressComponent },
+    //         { path: 'graficas1', component: Grafics1Component },
+    //             //PARA INSTERTAR UNA RUTA VACÍA QUE DIRECCIONE AL DASHBOARD
 
-            { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
-        ]
-    }, 
+    //         { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+    //     ]
+    // }, 
     {path: 'dashboard', component: DashboardComponent },
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
